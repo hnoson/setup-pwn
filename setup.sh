@@ -3,6 +3,7 @@
 sudo apt install -y vim python python-pip zsh tmux ruby
 chsh -s /bin/zsh
 sudo pip install pwntools
+cp .vimrc .zshrc .tmux.conf ~
 mkdir ~/programs
 cd ~/programs
 
@@ -26,7 +27,6 @@ chmod +x rp++/rp++
 # one_gadget
 sudo gem install one_gadget
 
-# dotfiles
-cp .vimrc ~
-cp .zshrc ~
-cp .tmux.conf ~
+# radare2
+git clone https://github.com/radare/radare2.git
+radare2/sys/install.sh
