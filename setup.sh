@@ -1,6 +1,6 @@
 #!/bin/sh
 
-sudo apt install -y vim-gnome python python-pip zsh tmux ruby xclip auditd
+sudo apt install -y vim-gnome python python-pip zsh tmux ruby xclip auditd curl
 chsh -s /bin/zsh
 sudo pip install pwntools
 cp .vimrc .zshrc .tmux.conf ~
