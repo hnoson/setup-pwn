@@ -8,8 +8,11 @@ mkdir ~/programs
 cd ~/programs
 
 # gdb
-git clone https://github.com/longld/peda.git
-git clone https://github.com/hnoson/gdbheap.git
+git clone https://github.com/pwndbg/pwndbg
+(
+    cd pwndbg
+    ./setup.sh
+)
 
 # libc-database (sometimes fails)
 git clone https://github.com/niklasb/libc-database.git
