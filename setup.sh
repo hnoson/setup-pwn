@@ -1,6 +1,6 @@
 #!/bin/sh
 
-sudo apt install -y vim-gnome python python-pip zsh tmux ruby xclip auditd curl libc6:i386 libc6-dbg:i386 socat
+sudo apt install -y vim-gnome python python-pip zsh tmux ruby xclip auditd curl libc6:i386 libc6-dbg:i386 socat pkg-config
 chsh -s /bin/zsh
 sudo pip install pwntools
 cp .vimrc .zshrc .tmux.conf .gdbinit ~
