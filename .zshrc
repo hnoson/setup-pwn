@@ -38,6 +38,7 @@ zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 
 alias ls='ls --color=auto'
 export PATH=$PATH:~/programs/rp++
+export LC_ALL=$LANG
 
 function lidentify() {
     if [ $# > 0 ]
