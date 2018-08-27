@@ -2,7 +2,7 @@
 
 sudo dpkg --add-architecture i386
 sudo apt update
-sudo apt install -y vim-gnome python python-pip zsh tmux ruby xclip auditd curl socat pkg-config
+sudo apt install -y vim-gnome python python-pip zsh tmux ruby xclip auditd curl socat pkg-config hexdiff
 sudo apt install -y libc6:i386 libc6-dbg:i386
 chsh -s /bin/zsh
 sudo pip install pwntools
@@ -31,7 +31,7 @@ radare2/sys/install.sh
 r2pm init
 r2pm install r2dec
 
-# libc-database (sometimes fails)
+# libc-database
 git clone https://github.com/niklasb/libc-database.git
 (
     cd libc-database
