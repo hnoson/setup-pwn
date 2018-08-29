@@ -2,7 +2,7 @@
 
 sudo dpkg --add-architecture i386
 sudo apt update
-sudo apt install -y vim-gnome python python-pip zsh tmux ruby xclip auditd curl socat pkg-config hexdiff
+sudo apt install -y vim-gnome python python-pip zsh tmux ruby xclip auditd curl socat pkg-config hexdiff cmake
 sudo apt install -y libc6:i386 libc6-dbg:i386
 chsh -s /bin/zsh
 sudo pip install pwntools
