@@ -36,3 +36,13 @@ git clone https://github.com/niklasb/libc-database.git
     cd libc-database
     ./get
 )
+
+# z3py
+git clone https://github.com/Z3Prover/z3.git
+(
+    cd z3
+    python scripts/mk_make.py
+    cd build
+    make
+    sudo make install
+)
