@@ -37,7 +37,7 @@ zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
 zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 
 alias ls='ls --color=auto'
-export PATH=$PATH:~/programs/rp++
+export PATH=$PATH:~/tools/rp++
 export LC_ALL=$LANG
 
 function lidentify() {
@@ -45,7 +45,7 @@ function lidentify() {
     then
         filename=`realpath $1`
     fi
-    pushd ~/programs/libc-database >> /dev/null
+    pushd ~/tools/libc-database >> /dev/null
     ./identify $filename
     popd >> /dev/null
 }

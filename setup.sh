@@ -7,8 +7,8 @@ sudo apt install -y libc6:i386 libc6-dbg:i386
 chsh -s /bin/zsh
 sudo pip install pwntools
 cp .vimrc .zshrc .tmux.conf ~
-mkdir ~/programs
-cd ~/programs
+mkdir ~/tools
+cd ~/tools
 
 # gdb
 git clone https://github.com/pwndbg/pwndbg
