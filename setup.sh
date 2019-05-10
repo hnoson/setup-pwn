@@ -26,10 +26,6 @@ chmod +x rp++/rp++
 # one_gadget
 sudo gem install one_gadget
 
-# radare2
-git clone https://github.com/radare/radare2.git
-radare2/sys/install.sh
-
 # libc-database
 git clone https://github.com/niklasb/libc-database.git
 (
