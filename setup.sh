@@ -1,8 +1,10 @@
 #!/bin/sh
 
+echo "\$nrconf{restart} = 'a';" | sudo tee /etc/needrestart/conf.d/50-autorestart.conf
+
 sudo dpkg --add-architecture i386
 sudo apt update
-sudo apt install -y vim-gnome python python-pip zsh tmux ruby xclip auditd curl socat pkg-config hexdiff cmake qemu-user-static gcc-arm-linux-gnueabihf gdb-multiarch
+sudo apt install -y python3 python3-pip zsh tmux ruby xclip auditd curl socat pkg-config hexdiff cmake qemu-user-static gcc-arm-linux-gnueabihf gdb-multiarch
 sudo apt install -y libc6:i386 libc6-dbg:i386
 chsh -s /bin/zsh
 sudo pip install pwntools
@@ -18,10 +20,19 @@ git clone https://github.com/pwndbg/pwndbg
 )
 git clone https://github.com/alset0326/peda-arm.git
 
+# ninja
+git clone https://github.com/ninja-build/ninja.git
+(
+    cd ninja
+    ./configure --bootstrap
+)
+
 # rp++
-mkdir rp++
-wget https://github.com/downloads/0vercl0k/rp/rp-lin-x64 -O rp++/rp++
-chmod +x rp++/rp++
+git clone https://github.com/0vercl0k/rp.git
+(
+    cd rp
+    chmod u+x ./build-release.sh && ./build-release.sh
+)
 
 # one_gadget
 sudo gem install one_gadget

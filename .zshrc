@@ -2,7 +2,7 @@
 
 autoload -Uz promptinit
 promptinit
-prompt adam1
+prompt bart
 
 setopt histignorealldups sharehistory
 
@@ -37,7 +37,7 @@ zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
 zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 
 alias ls='ls --color=auto'
-export PATH=$PATH:~/tools/rp++
+export PATH=$PATH:~/tools/rp/src/build:~/tools/ninja
 export LC_ALL=$LANG
 
 function lidentify() {
